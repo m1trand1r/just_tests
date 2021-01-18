@@ -6,6 +6,8 @@ async def count():
     print('One')
     await asyncio.sleep(1)
     print('Two')
+    await asyncio.sleep(1)
+    print('Three')
 
 async def main():
     await asyncio.gather(count(), count(), count())
